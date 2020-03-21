@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css?family=BioRhyme+Expanded:200|Catamaran&display=swap');
+
+h1 {
+    font-family: 'BioRhyme Expanded', serif;
+}
+
+* {
+    font-family: 'Catamaran', sans-serif;
+}
+
+body {
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+    min-height: 100vh;
+}
+
+#header {
+    text-align: center;
+    margin-top: 4em;
+}
+
+#main {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+p {
+    max-width: 60vw;
+}
+
+a {
+    text-decoration: none;
+    color: green;
+    opacity: 0.4;
+}
+
+a::after {
+    content: ' | ';
+    color: grey !important;
+    opacity: 0.8 !important;
+}
+
+a.last::after {
+    content: none;
+}
+
+.active {
+    color:orange;
+    opacity: 1;
+}
+
+.cat-image::before {
+    content: '♥';
+    color: grey;
+    position: absolute;
+    font-size: larger;
+}
+
+.liked::before {
+    color: red;
+}
